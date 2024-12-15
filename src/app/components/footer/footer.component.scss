@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  width: 100%;
+  padding: 2rem 4rem;
+
+  font-size: 1.2rem;
+  font-family: "Poppins", serif;
+  box-shadow: 0 0 1.5rem rgb(0 0 0 / 0.3);
+
+  background-color: #121214;
+  color: #f1f1f1;
+
+  & span {
+    font-weight: 500;
+  }
+}
