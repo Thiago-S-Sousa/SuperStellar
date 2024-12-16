@@ -1,0 +1,170 @@
+$gradient: linear-gradient(
+  to left,
+  rgb(156, 0, 177),
+  rgb(172, 0, 163),
+  rgb(187, 0, 148),
+  rgb(206, 0, 132),
+  rgb(224, 0, 116)
+);
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    padding: 6rem 0 0 0;
+    background-color: #09090a;
+    font-family: "Poppins", serif;
+  }
+
+  .home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.5rem;
+
+    min-height: calc(100dvh - 6rem);
+    width: 100%;
+
+    padding: 0 4rem;
+
+    & h1 {
+      font-size: 2rem;
+      font-weight: 500;
+
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+
+      color: #f1f1f1;
+      background-color: #5e5d5d;
+    }
+
+    & h2 {
+      font-size: 4.2rem;
+      font-weight: 500;
+
+      line-height: 1.2;
+      letter-spacing: 0.1rem;
+
+      color: #f1f1f1;
+      width: 85%;
+
+      & span {
+        background-image: $gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+
+      width: 70%;
+
+      color: #f1f1f1cc;
+    }
+  }
+
+  .starship {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    min-height: calc(110dvh - 6rem);
+    width: 100%;
+    padding: 0 4rem;
+
+    background-color: #121214;
+
+    & span {
+      color: #f1f1f1;
+      background-color: #09090a;
+    }
+
+    & .btn {
+      width: 80%;
+      padding: 2rem 0;
+
+      color: #f1f1f1cc;
+      background-image: $gradient;
+    }
+  }
+
+  .mission {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+
+    min-height: calc(110dvh - 6rem);
+    width: 100%;
+    padding: 0 4rem;
+
+    background-color: #09090a;
+
+    & span {
+      color: #f1f1f1;
+      background-color: #5e5d5d;
+    }
+
+    & .btn {
+      width: 30%;
+      padding: 2rem;
+
+      color: #f1f1f1cc;
+      background-image: $gradient;
+    }
+  }
+
+  .starship,
+  .mission {
+    & span {
+      font-size: 2.2rem;
+      font-weight: 500;
+
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+
+    #title {
+      font-size: 4rem;
+      font-weight: 500;
+
+      line-height: 1.2;
+      letter-spacing: 0.1rem;
+
+      color: #f1f1f1;
+      width: 80%;
+    }
+
+    & #subtitle {
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+
+      width: 80%;
+
+      color: #f1f1f1cc;
+    }
+
+    & .btn {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    & .btn:hover {
+      box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+    }
+  }
+}
