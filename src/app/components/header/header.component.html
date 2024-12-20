@@ -1,6 +1,9 @@
 <header class="header">
   <span class="logo"><fa-icon [icon]="faRocket"></fa-icon></span>
-  <nav class="navigation">
+  <span id="navbar" [ngClass]="{}" (click)="toglleNavbar()"
+    ><fa-icon [icon]="faIcon"></fa-icon
+  ></span>
+  <nav class="navigation" [ngClass]="{ active: openNavbar }">
     <ul>
       <li>SuperStellar</li>
       <li>Espaçonaves</li>

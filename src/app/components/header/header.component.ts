@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import {
+  IconDefinition,
+  faGripLines,
+  faRocket,
+  faXmark,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +13,17 @@ import { faRocket } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent {
   faRocket = faRocket;
+  faGripLines = faGripLines;
+  faXmark = faXmark;
+
+  openNavbar: boolean = false;
+  faIcon: IconDefinition = faGripLines;
+
+  toglleNavbar() {
+    this.openNavbar = !this.openNavbar;
+
+    this.openNavbar === true
+      ? (this.faIcon = this.faXmark)
+      : (this.faIcon = this.faGripLines);
+  }
 }
